@@ -3,57 +3,151 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover breathtaking destinations and book your dream vacation with TravelVista.">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style/style.css">
-    <title>TravelVista</title>
+    <title>TravelVista - Explore the World</title>
 </head>
 <body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="content-wrap nav-container">
+            <div class="logo">TravelVista</div>
+            <ul class="nav-links">
+                <li><a href="#hdr">Home</a></li>
+                <li><a href="#destinations">Destinations</a></li>
+                <li><a href="#prices">Pricing</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
     <div class="hdr-bg"></div>
     <header id="hdr">
-        <div class="content-wrap">
+        <div class="content-wrap hero-content">
             <h1>Welcome to TravelVista</h1>
-            <p>This website showcases breathtaking destinations, offers seamless booking options, and provides personalized travel itineraries tailored to every kind of traveler. Dive into a world of adventure and discover the joy of exploring new places, all in one beautifully crafted online experience. Whether you're seeking a serene beach escape, a thrilling mountain trek, or a cultural city tour, this site is your gateway to unforgettable journeys!</p>
+            <p>This website showcases breathtaking destinations, offers seamless booking options, and provides personalized travel itineraries tailored to every kind of traveler. Dive into a world of adventure and discover the joy of exploring new places, all in one beautifully crafted online experience.</p>
+            <a href="#destinations" class="btn btn-primary">Explore Now</a>
         </div>
     </header>    
 
-    <section class="destinations">
+    <!-- Destinations Section -->
+    <section id="destinations" class="destinations">
         <div class="content-wrap">
             <h2>Our Destinations</h2>
-            <div class="dest">
-                <h3>Paris</h3>
-                <img src="image/pexels-jarod-17152276.jpg" alt="image">
-                <div class="dest-text">
-                    Few things captivate Paris like its iconic Dame de Fer, the 'Iron Lady.' This lattice-engineered masterpiece not only symbolizes its era but also mesmerizes visitors with its awe-inspiring views, rich history, and commanding presence on the Parisian skyline. Book your Eiffel Tower experience, now!  
+            <div class="dest-grid">
+                <div class="dest-card">
+                    <img src="image/pexels-jarod-17152276.jpg" alt="Eiffel Tower, Paris">
+                    <div class="dest-text">
+                        <h3>Paris</h3>
+                        <p>Few things captivate Paris like its iconic Dame de Fer. A lattice-engineered masterpiece that mesmerizes visitors with awe-inspiring views.</p>
+                    </div>
                 </div>
-            </div>
 
-            <div class="dest">
-                <h3>India Gate</h3>
-                <img src="image/pexels-ravi-roshan-2875998-16960242.jpg" alt="image">
-                <div class="dest-text">
-                    Located in the heart of New Delhi, India Gate stands as a majestic symbol of valour and sacrifice. It is commemorating the bravery of Indian soldiers who laid down their lives during World War I. In this comprehensive guide, we will take you on a journey through the rich history and significance of this monument.
+                <div class="dest-card">
+                    <img src="image/pexels-ravi-roshan-2875998-16960242.jpg" alt="India Gate, New Delhi">
+                    <div class="dest-text">
+                        <h3>India Gate</h3>
+                        <p>Located in the heart of New Delhi, India Gate stands as a majestic symbol of valour. Discover the rich history of this monument.</p>
+                    </div>
+                </div>
+
+                <div class="dest-card">
+                    <img src="https://images.pexels.com/photos/164336/pexels-photo-164336.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Maldives Beach">
+                    <div class="dest-text">
+                        <h3>Maldives</h3>
+                        <p>Experience the ultimate tropical getaway with pristine white-sand beaches, crystal-clear turquoise waters, and luxury overwater villas.</p>
+                    </div>
                 </div>
             </div>
         </div>
-        <a href="#Contact" class="btn">Contact Us</a>
     </section>
     
-
-    <section class="Prices">
+    <!-- Pricing Section -->
+    <section id="prices" class="Prices">
         <div class="content-wrap">
-            <h2>Our Prices</h2>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, aut.</p>
+            <h2>Our Packages</h2>
+            <div class="pricing-grid">
+                <div class="price-card">
+                    <h3>Starter</h3>
+                    <div class="price">$499</div>
+                    <ul>
+                        <li>3 Days, 2 Nights</li>
+                        <li>3-Star Accommodation</li>
+                        <li>City Tour Guide</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-outline">Choose Starter</a>
+                </div>
+                <div class="price-card featured">
+                    <div class="badge">Most Popular</div>
+                    <h3>Pro</h3>
+                    <div class="price">$899</div>
+                    <ul>
+                        <li>5 Days, 4 Nights</li>
+                        <li>4-Star Accommodation</li>
+                        <li>All-Inclusive Meals</li>
+                        <li>VIP City Tours</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-primary">Choose Pro</a>
+                </div>
+                <div class="price-card">
+                    <h3>Luxury</h3>
+                    <div class="price">$1499</div>
+                    <ul>
+                        <li>7 Days, 6 Nights</li>
+                        <li>5-Star Resort</li>
+                        <li>Private Flights & Transfers</li>
+                        <li>Exclusive Experiences</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-outline">Choose Luxury</a>
+                </div>
+            </div>
         </div>
     </section>
 
-    <section class="Contact" id="Contact">
-        <div class="content-wrap">
-            <h2>Contact Us</h2>
-            <p>Email:official.dinesh@outlook.com</p>
+    <!-- Contact Section -->
+    <section id="contact" class="Contact">
+        <div class="content-wrap contact-container">
+            <div class="contact-info">
+                <h2>Get in Touch</h2>
+                <p>Ready to plan your next adventure? Contact us today to customize your dream vacation!</p>
+                <div class="contact-details">
+                    <p><strong>Email:</strong> official.dinesh@outlook.com</p>
+                    <p><strong>Phone:</strong> +1 (555) 123-4567</p>
+                    <p><strong>Location:</strong> Global Adventures HQ</p>
+                </div>
+            </div>
+            <div class="contact-form-wrapper">
+                <form class="contact-form" action="mailto:official.dinesh@outlook.com" method="POST" enctype="text/plain">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="Name" required placeholder="Enter your name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="Email" required placeholder="Enter your email">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="Message" rows="4" required placeholder="How can we help you?"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
         </div>
     </section>
 
+    <!-- Footer -->
     <footer>
-        All copyrights reserved
+        <div class="content-wrap footer-content">
+            <p>&copy; 2026 TravelVista by Dinesh. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#">Twitter</a>
+                <a href="#">Instagram</a>
+                <a href="#">LinkedIn</a>
+            </div>
+        </div>
     </footer>
 </body>
 </html>
